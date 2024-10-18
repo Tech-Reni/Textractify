@@ -1,0 +1,215 @@
+/* General Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f8f8;
+}
+
+:root {
+    --accent-clr: #3643f1;
+}
+
+h2,
+p {
+    text-align: center;
+}
+
+.error_message{
+    color: red;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Container for the form and the doodle art */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.login_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 95%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.form-container {
+    width: 50%;
+    padding: 15px;
+}
+
+
+.form-container h2 {
+    color: var(--accent-clr);
+    font-size: 1.5rem;
+}
+
+.form-container label {
+    font-size: 14px;
+}
+
+.form-container p {
+    margin: 10px 0;
+    font-size: 13px;
+}
+
+.form-container a {
+    color: red;
+    text-decoration: none;
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+hr {
+    color: var(--accent-clr);
+    background-color: #3643f1;
+}
+
+.form-container input {
+    color: var(--accent-clr);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 7px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Signup Illustration */
+.signup_illustration {
+    width: 45%;
+    padding: 20px;
+}
+
+.signup_illustration img {
+    width: 100%;
+    height: fit-content;
+    padding-top: 180px;
+}
+
+/* Terms and Conditions */
+.terms {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Sign Up Button */
+.sign-up-btn {
+    width: 100%;
+    background-color: var(--accent-clr);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.sign-up-btn:hover {
+    background-color: var(--accent-clr);
+}
+
+/* Divider between regular and Google sign-up */
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.divider hr {
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+}
+
+.divider span {
+    margin: 0 10px;
+    color: #888;
+}
+
+/* Google Sign Up */
+.google-signup-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    color: #444;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.google-signup-btn img {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.google-signup-btn:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .doodle-art {
+        margin-top: 20px;
+    }
+
+    .signup_illustration {
+        display: none;
+    }
+}
